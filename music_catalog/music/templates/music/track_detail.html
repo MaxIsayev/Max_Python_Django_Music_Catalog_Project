@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{{ block.super }} | {{ track }}{% endblock title %}
+{% block content %}
+<div style="overflow-x:auto;">
+<table>
+    <tr>
+      <th>{% trans "Name"|capfirst %}</th>  
+      <th>{% trans "Length"|capfirst %}</th>  
+      <th>{% trans "Bitrate"|capfirst %}</th>  
+      <th>{% trans "Year released"|capfirst %}</th>  
+      <th>{% trans "Genre"|capfirst %}</th>  
+      <th>{% trans "Track rating"|capfirst %}</th>  
+      <th>{% trans "Album"|capfirst %}</th>  
+      <th>{% trans "Owner"|capfirst %}</th>  
+      <th>{% trans "Audio file"|capfirst %}</th>  
+      <th>{% trans "Audio image"|capfirst %}</th>      
+    </tr>    
+    <tr>
+        <td>{{ track.name }}</td> 
+        <td>{{ track.length }}</td>    
+        <td>{{ track.bitrate }}</td>    
+        <td>{{ track.year_released }}</td>    
+        <td>{{ track.genre }}</td>    
+        <td>{{ track.track_rating }}</td>    
+        <td>{{ track.album }}</td>    
+        <td>{{ track.owner }}</td>   
+        <td>{{ track.audio_file }}</td>    
+        <td>{{ track.audio_img }}</td>           
+    </tr>       
+</table>
+</div>
+{% endblock content %}

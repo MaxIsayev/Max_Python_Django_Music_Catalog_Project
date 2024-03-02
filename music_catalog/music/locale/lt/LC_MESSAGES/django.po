@@ -1,0 +1,173 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-02 21:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < "
+"11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? "
+"1 : n % 1 != 0 ? 2: 3);\n"
+
+#: music/admin.py:18
+msgid "total tracks"
+msgstr "Viso dainų"
+
+#: music/admin.py:26
+msgid "general"
+msgstr "bendras"
+
+#: music/admin.py:32
+msgid "ownership"
+msgstr "nuosavybė"
+
+#: music/admin.py:37
+msgid "temporal tracking"
+msgstr "laikinas sėkimas"
+
+#: music/apps.py:9
+msgid "music"
+msgstr "muzika"
+
+#: music/models.py:10 music/models.py:34
+msgid "name"
+msgstr "pavadinimas"
+
+#: music/models.py:11 music/models.py:37
+msgid "year released"
+msgstr "išleidimo metai"
+
+#: music/models.py:12
+msgid "number of songs"
+msgstr "dainų kiekis"
+
+#: music/models.py:13
+msgid "album rating"
+msgstr "albumo reitingas"
+
+#: music/models.py:17 music/models.py:51
+msgid "owner"
+msgstr "savininkas"
+
+#: music/models.py:25 music/models.py:45
+msgid "album"
+msgstr "albumas"
+
+#: music/models.py:26
+msgid "albums"
+msgstr "albumai"
+
+#: music/models.py:35
+msgid "length"
+msgstr "trukmė"
+
+#: music/models.py:36
+msgid "bitrate"
+msgstr "kokybė"
+
+#: music/models.py:38
+msgid "genre"
+msgstr "žanras"
+
+#: music/models.py:39
+msgid "track rating"
+msgstr "dainos reitingas"
+
+#: music/models.py:40
+msgid "audio"
+msgstr "daina mp3"
+
+#: music/models.py:41
+msgid "audio picture"
+msgstr "dainos paveikslas"
+
+#: music/models.py:60
+msgid "track"
+msgstr "daina"
+
+#: music/models.py:61
+msgid "tracks"
+msgstr "dainos"
+
+#: music/templates/base.html:9 music/templates/music/index.html:4
+msgid "Music catalog"
+msgstr "Muzikos katalogas"
+
+#: music/templates/base.html:14
+msgid "Music library"
+msgstr "Muzikos biblioteka"
+
+#: music/templates/base.html:16
+msgid "Library"
+msgstr "Biblioteka"
+
+#: music/templates/base.html:17 music/templates/music/track_list.html:7
+msgid "Tracks"
+msgstr "Dainos"
+
+#: music/templates/music/index.html:5
+msgid "Users:"
+msgstr "Vartotojai:"
+
+#: music/templates/music/index.html:6
+msgid "Albums:"
+msgstr "Albumai:"
+
+#: music/templates/music/index.html:7
+msgid "Tracks:"
+msgstr "Dainos:"
+
+#: music/templates/music/track_detail.html:8
+msgid "Name"
+msgstr "Pavadinimas"
+
+#: music/templates/music/track_detail.html:9
+msgid "Length"
+msgstr "Trukmė"
+
+#: music/templates/music/track_detail.html:10
+msgid "Bitrate"
+msgstr "Kokybė"
+
+#: music/templates/music/track_detail.html:11
+msgid "Year released"
+msgstr "Išleidimo metai"
+
+#: music/templates/music/track_detail.html:12
+msgid "Genre"
+msgstr "Žanras"
+
+#: music/templates/music/track_detail.html:13
+msgid "Track rating"
+msgstr "Dainos reitingas"
+
+#: music/templates/music/track_detail.html:14
+msgid "Album"
+msgstr "Albumas"
+
+#: music/templates/music/track_detail.html:15
+msgid "Owner"
+msgstr "Savininkas"
+
+#: music/templates/music/track_detail.html:16
+msgid "Audio file"
+msgstr "Audio failas"
+
+#: music/templates/music/track_detail.html:17
+msgid "Audio image"
+msgstr "Audio paveikslas"
+
+#: music/templates/music/track_list.html:15
+msgid "No tracks Found"
+msgstr "Dainų nerasta"
