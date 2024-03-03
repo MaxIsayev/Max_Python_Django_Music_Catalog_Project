@@ -1,0 +1,17 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{{ album.name }} | {{ block.super }}{% endblock title %}
+{% block content %}
+<h1>{{ album.name }}</h1>
+{% if album.owner == request.user %}
+    <p>
+        <a class="button" href="{% url "album_update" album.pk %}">{% trans "edit"|capfirst %}</a>
+        <a class="button" href="{% url "album_delete" album.pk %}">{% trans "delete"|capfirst %}</a>
+    </p>
+{% endif %}
+<p>{% trans "owner" %}: <a href="{% url "user_detail" album.owner.username %}">{{ album.owner }}</a></p>
+<p>{% trans "tracks count" %}: {{ album.tracks.count }}</p>
+<p>{% trans "year released" %}: {{ album.year_released }}</p>
+<p>{% trans "number of songs" %}: {{ album.number_of_songs }}</p>
+<p>{% trans "album rating" %}: {{ album.album_rating }}</p>
+
+{% endblock content %}

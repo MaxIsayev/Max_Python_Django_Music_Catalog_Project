@@ -1,0 +1,19 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{% trans "deleting"|capfirst %} {{ album.name }} | {{ block.super }}{% endblock title %}
+{% block content %}
+<h1>{% trans "deleting album"|capfirst %} {{ album.name }}</h1>
+<form method="post" action="{{ request.path }}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <p>
+        {% trans "are you sure you want to delete album" %}
+        {{ album.name }}? 
+        {% trans "all albums"|capfirst %} {{ album.tasks.count }}
+        {% trans "tasks will be deleted" %}.
+    </p>
+    <p>
+        <button type="submit">{% trans "confirm"|capfirst %}</button>
+        <a class="button" href="{% url "album_detail" album.pk %}">{% trans "change mind"|capfirst %}</a>
+    </p>
+</form>
+{% endblock content %}
